@@ -1,3 +1,4 @@
+import org.assertj.core.api.Assert;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -20,12 +21,15 @@ class ThingTest {
         assertThat(42)
                 .isEqualTo(42);
     }
+    
+}
+
+class FizzBuzzConverter {
 
     @Test
-    void testBuenasNoches() {
-        Thing thing = new Thing(name, LocalTime.of(22, 0));
-        String value = thing.greetNight();
-        assertThat(value)
-                .isEqualTo("¡Buenas noches "+name+"!");
+    public void fizzBuzzConverter1() {
+        FizzBuzzConverter fizzBuzz = new FizzBuzzConverter();
+        Assert.assertEquals("1", fizzBuzz. convert(1));
     }
+
 }
