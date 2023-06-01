@@ -1,0 +1,5 @@
+@Test
+public void fizzBuzzConvertorMultiplesOfThree() {
+FizzBuzzConverter fizzBuzz = new FizzBuzzConverter();
+Assert.assertEquals("Fizz", fizzBuzz. convert(12));
+}
