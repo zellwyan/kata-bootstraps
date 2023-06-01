@@ -1,0 +1,11 @@
+class FizzBuzzConverter {
+
+    @Test
+    public void fizzBuzzConvertor2() {
+        FizzBuzzConverter fizzBuzz = new FizzBuzzConverter();
+        Assert. assertEquals("2", fizzBuzz. convert(2));
+    }
+
+
+
+}
