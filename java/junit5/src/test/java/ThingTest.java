@@ -29,7 +29,7 @@ class FizzBuzzConverter {
     @Test
     public void fizzBuzzConverter1() {
         FizzBuzzConverter fizzBuzz = new FizzBuzzConverter();
-        Assert.assertEquals("1", fizzBuzz. convert(1));
+        Assert.assertEquals("1", (fizzBuzz). convert(1));
     }
 
 }
