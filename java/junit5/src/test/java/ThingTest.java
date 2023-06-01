@@ -2,6 +2,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import java.time.LocalTime;
+
 
 class ThingTest {
 
@@ -19,5 +21,11 @@ class ThingTest {
                 .isEqualTo(42);
     }
 
-    
+    @Test
+    void testBuenasNoches() {
+        Thing thing = new Thing(name, LocalTime.of(22, 0));
+        String value = thing.greetNight();
+        assertThat(value)
+                .isEqualTo("¡Buenas noches "+name+"!");
+    }
 }
