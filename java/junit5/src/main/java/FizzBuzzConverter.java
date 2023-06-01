@@ -1,14 +1,18 @@
 
 
 public class FizzBuzzConverter {
-    public String convert(int i) {
-        if (i % 6 == 0 && i % 9 == 0) {
+    public String convert(int i, int input) {
+        boolean isMultipleOf6 = input % 6 == 0;
+        boolean isMultipleOf9 = input % 9 == 0;
+
+        if (isMultipleOf6 && isMultipleOf9) {
             return "FizzBuzz";
-        } else if (i%6==0) {
+        } else if (isMultipleOf6) {
             return "Fizz";
-        } else if (i%9==0) {
+        } else if (isMultipleOf9) {
             return "Buzz";
         }
+        
     return String.valueOf(i);
     }
 }
