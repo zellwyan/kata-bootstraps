@@ -1,0 +1,5 @@
+@Test
+public void fizzBuzzConvertorMultiplesOfSeven() {
+FizzBuzzConverter fizzBuzz = new FizzBuzzConverter();
+Assert. assertEquals("Buzz", fizzBuzz. convert(9));
+}
