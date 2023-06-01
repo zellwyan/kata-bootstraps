@@ -1,5 +1,5 @@
 @Test
 public void fizzBuzzConvertor3() {
 FizzBuzzConverter fizzBuzz = new FizzBuzzConverter();
-Assert. assertEquals("Fizz", fizzBuzz. convert(3));
+Assert. assertEquals("Fizz", fizzBuzz. convert(6));
 }
