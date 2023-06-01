@@ -1,0 +1,8 @@
+@Test
+public void fizzBuzzConvertorMultiplesOfThreeAndSeven() {
+FizzBuzzConverter fizzBuzz = new FizzBuzzConverter();
+Assert. assertNotEquals("FizzBuzz", fizzBuzz. convert(14));
+Assert. assertEquals("FizzBuzz", fizzBuzz. convert(21));
+Assert. assertEquals("FizzBuzz", fizzBuzz. convert(42));
+Assert. assertEquals("FizzBuzz", fizzBuzz. convert(63));
+}
